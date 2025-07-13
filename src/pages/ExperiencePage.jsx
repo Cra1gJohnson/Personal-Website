@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './ExperiencePage.css';
-import TabsBar from '../assets/components/tabsbar.jsx';
+import TabsBar from '../assets/components/TabsBar.jsx';
 import Home from '../assets/components/Home.jsx';
 import About from '../assets/components/About.jsx';
 import Experience from '../assets/components/Experience.jsx';

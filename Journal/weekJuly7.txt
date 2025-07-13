@@ -37,3 +37,14 @@ July 10th
 July 11th
 -> Craig 
     - continued to mess with experience and components
+
+July 12th
+-> Craig
+
+-> Christian
+    - Updated general color pallete of website. Colors mesh much better together.
+    - Made navbar/tabbar buttons have the same background as that color pallete as to not stand out
+    - Made the App.jsx be the main page for handling all tbe main page functions instead of ExperiencePage.jsx
+    - Made the navbar links work as they did in ExperiencePage.jsx
+    - Updated the links to ease into a color on hover.
+    - Added an "active tab bar" that moves within the tabbar depending on what tab the user picks. Animation looks smooth.
