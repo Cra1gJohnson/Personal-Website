@@ -1,0 +1,5 @@
+
+July 17th
+
+-> Christian
+    - Created branch to work on components on all pages to stay working properly when page is zoomed in or out.
