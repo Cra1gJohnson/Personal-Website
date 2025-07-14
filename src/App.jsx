@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './assets/components/Header.jsx';
 import TabsBar from './assets/components/TabsBar.jsx';
 import SocialBar from './assets/components/SocialBar.jsx';
+import SideBar from './assets/components/SideBar.jsx';
 
 import Home from './assets/components/Home.jsx';
 import About from './assets/components/About.jsx';
@@ -40,16 +41,21 @@ function App() {
   }
 
   return (
-    <div className="main-body">
+    <div>
       <div>
-          <span> 
-              <TabsBar activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <SideBar />
+      </div>
+      <div className="main-body">
+        <div>
+          <span>
+            <TabsBar activeTab={activeTab} setActiveTab={setActiveTab} />
           </span>
-      </div>
-      <div style={{padding: '2rem'}}>
+        </div>
+        <div style={{ padding: '2rem' }}>
           {TabContent}
+        </div>
       </div>
-  </div>
+    </div>
   );
 };
 

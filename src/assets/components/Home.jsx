@@ -1,5 +1,7 @@
 import React from "react";
 
+import './Home.css';
+
 import SocialBar from './SocialBar.jsx';
 
 import ShinyText from './TxtComp/ShinyText.jsx';
@@ -14,7 +16,7 @@ function Home() {
                 disabled={false}
                 speed={3}
                 className=""
-                style={{ fontSize: 'inherit', fontWeight: 'inherit' }}
+                style={{ fontSize: 'inherit', fontWeight: 'inherit'}}
                 />
             </h1>
 
