@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './TabsBar.css';
+import '../../index.css';
 
 function TabsBar({ activeTab, setActiveTab }) {
     console.log('activeTab in TabsBar:', activeTab);

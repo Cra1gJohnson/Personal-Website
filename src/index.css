@@ -7,6 +7,8 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #1C1F26;
 
+  border: 2px solid #3E4552;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -35,26 +37,94 @@ h1 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #2A2E37;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  color: #7FB7BE;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* TabsBar styles */
+
+.tabs-bar {
+  font-family: 'moon-rounded';
+  position: absolute;
+  background-color: #2A2E37;
+  display: flex;
+  border-radius: 0px 0px 25px 25px;
+  border: 2px solid #3E4552;
+  min-height: 43px;
+  max-height: 43px;
+  width: auto;
+  height: 4.5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  margin-top: -2px;
+  flex-direction: row;
+}
+
+.tabs-link {
+    font-size: 20px;
+    font-family: 'moon-rounded';
+    background-color: #2A2E37;
+    color: #E4E6EB;
+    margin-right: 30px;
+    margin-left: 30px;
+    transition: color 0.5s ease;
+    padding: 0px;
+}
+
+.tabs-link:hover {
+    color:#7FB7BE;
+    border-top: 1px solid #2A2E37;
+    border-right: 1px solid #2A2E37;
+    border-left: 1px solid #2A2E37;
+    border-bottom: 1px solid #2A2E37;
+}
+
+.active-tab {
+    position: absolute;
+    bottom: 0;
+    height: 5%; /*2px*/
+    width: 10%; /*60px*/
+    background-color: #7FB7BE;
+    transition: transform 0.3s ease-in-out;
+    left: 30.8%; /*180px*/
+    top: 80%; /*35px*/
+}
+
+.active-tab.home {
+    transform: translateX(-150px); /* adjust this based on button size */
+}
+
+.active-tab.about {
+    transform: translateX(-25px);
+}
+
+.active-tab.experience {
+    transform: translateX(130px);
+}
+
+.active-tab.projects {
+    transform: translateX(300px);
+}
+
+/* TabsBar styles end */
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #1C1F26;;
   }
   a:hover {
     color: #747bff;
@@ -63,3 +133,7 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+
+
