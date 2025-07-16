@@ -5,18 +5,3 @@
     position: relative;
 }
 
-.main-body{
-    font-family:'moon-rounded';
-    color: #E4E6EB;
-    position: relative;
-    display: flex;
-    align-items: right;
-    justify-content: center;
-    border-radius: 25px;
-    border: 2px solid #3E4552;
-    width: 45%;
-    height: 70%;
-    left: 70vh;
-    background-color: #1C1F26;
-    top: 6vh;
-}

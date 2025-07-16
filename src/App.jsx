@@ -13,6 +13,7 @@ import Projects from './assets/components/Projects.jsx';
 import ShinyText from './assets/components/TxtComp/ShinyText.jsx';
 
 import './App.css';
+import './index.css';
 
 /*
 react components start  with an uppercase
@@ -41,21 +42,13 @@ function App() {
   }
 
   return (
-    <div>
-      <div>
-        <SideBar />
+    <main className="main-container">
+      <SideBar />
+      <div className="content-body">
+        <TabsBar activeTab={activeTab} setActiveTab={setActiveTab} />
+        {TabContent}
       </div>
-      <div className="main-body">
-        <div>
-          <span>
-            <TabsBar activeTab={activeTab} setActiveTab={setActiveTab} />
-          </span>
-        </div>
-        <div style={{ padding: '2rem' }}>
-          {TabContent}
-        </div>
-      </div>
-    </div>
+    </main>
   );
 };
 

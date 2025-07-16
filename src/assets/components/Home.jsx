@@ -1,6 +1,6 @@
 import React from "react";
 
-import './Home.css';
+import '../../index.css';
 
 import SocialBar from './SocialBar.jsx';
 
@@ -9,8 +9,8 @@ import ShinyText from './TxtComp/ShinyText.jsx';
 
 function Home() {
     return (
-        <div id="Home" >
-            <h1>
+        <div id="Home">
+            <h1 className="">
                 <ShinyText
                 text="Craig Johnson and Christian Walker"
                 disabled={false}

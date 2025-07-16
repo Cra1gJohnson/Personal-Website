@@ -7,8 +7,6 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #1C1F26;
 
-  border: 2px solid #3E4552;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -53,6 +51,39 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.main-container{
+  font-family:'moon-rounded';
+  color: #E4E6EB;
+  background-color: #1C1F26;
+  display: flex;
+  align-items:  normal;
+  justify-content: center;
+  border: 2px solid transparent;
+  width: 100%;
+  height: 100%;
+  min-width: 100vw; 
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.content-body {
+  font-family:'moon-rounded';
+  color: #E4E6EB;
+  position: relative;
+  display: flex;
+  align-items: right;
+  justify-content: center;
+  border-radius: 25px;
+  border: 2px solid #3E4552;
+  width: 45%;
+  min-width: 650px;
+  height: 70%;
+  background-color: #1C1F26;
+  top: 6vh;
+  padding-top: 50px;
+}
+
 /* TabsBar styles */
 
 .tabs-bar {
@@ -74,7 +105,7 @@ button:focus-visible {
 }
 
 .tabs-link {
-    font-size: 20px;
+    font-size: clamp(0.5rem, 10vw,1.25rem); /* 20px */
     font-family: 'moon-rounded';
     background-color: #2A2E37;
     color: #E4E6EB;
@@ -120,6 +151,13 @@ button:focus-visible {
 }
 
 /* TabsBar styles end */
+
+/* TabContent Styles */
+.tab-content {
+  padding: '2rem';
+  width: 200px;
+  border: 2px solid red;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

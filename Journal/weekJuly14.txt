@@ -1,0 +1,15 @@
+
+July 14th
+
+-> Christian
+    - Created branch to work on components on all pages to stay working properly when page is zoomed in or out.
+
+July 16th
+
+-> Christian 
+    - Did some changes yesterday that I forgot to commit.
+    - Moving some css styling to index.css.
+    - Most of it was making text and things change when zoom and not having zoom break anything
+    - Made zoom for main container (tab content) work by adding min width of 650px.
+    - For text using clamp() function can be good. Basically just a min value, preferred value, and max value. Could also be good for some divs or text holding things.
+    - Haven't started @media stuff. Will probably have everything work with zoom, merge branch, and then start a new branch to make sidebar go above the main container.
