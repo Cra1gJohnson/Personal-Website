@@ -13,3 +13,4 @@ July 16th
     - Made zoom for main container (tab content) work by adding min width of 650px.
     - For text using clamp() function can be good. Basically just a min value, preferred value, and max value. Could also be good for some divs or text holding things.
     - Haven't started @media stuff. Will probably have everything work with zoom, merge branch, and then start a new branch to make sidebar go above the main container.
+    - Added "SocialBar" to the bottom of "SideBar". Made sure that the spacing on it works as well and that the animations are clean.
