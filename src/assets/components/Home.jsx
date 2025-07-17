@@ -10,7 +10,7 @@ import ShinyText from './TxtComp/ShinyText.jsx';
 function Home() {
     return (
         <div id="Home">
-            <h1 className="">
+            <h1>
                 <ShinyText
                 text="Craig Johnson and Christian Walker"
                 disabled={false}

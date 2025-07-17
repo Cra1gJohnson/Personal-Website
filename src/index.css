@@ -32,6 +32,10 @@ h1 {
   line-height: 1.1;
 }
 
+h3 {
+  font-size: clamp(1rem, 1vw, 1.5rem); /* 16px to 24px */
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -78,6 +82,7 @@ button:focus-visible {
   border: 2px solid #3E4552;
   width: 45%;
   min-width: 650px;
+  max-width: 1300px;
   height: 70%;
   background-color: #1C1F26;
   top: 6vh;
@@ -105,7 +110,7 @@ button:focus-visible {
 }
 
 .tabs-link {
-    font-size: clamp(0.5rem, 10vw,1.25rem); /* 20px */
+    font-size: clamp(0.5rem, 10vw, 1.25rem); /* 20px */
     font-family: 'moon-rounded';
     background-color: #2A2E37;
     color: #E4E6EB;
