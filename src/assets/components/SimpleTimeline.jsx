@@ -63,7 +63,7 @@ const timelineStyles = `
   .timeline-circle-inner {
     width: 0.25rem;
     height: 0.25rem;
-    background-color: #3e4552;
+    background-color: #E4E6EB;
     border-radius: 50%;
   }
   
