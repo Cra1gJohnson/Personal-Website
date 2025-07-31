@@ -4,10 +4,10 @@ import TabsBar from './assets/components/TabsBar.jsx';
 import SocialBar from './assets/components/SocialBar.jsx';
 import SideBar from './assets/components/SideBar.jsx';
 
-import Home from './assets/components/Home.jsx';
 import About from './assets/components/About.jsx';
 import Experience from './assets/components/Experience.jsx';
 import Projects from './assets/components/Projects.jsx';
+import Blog from './assets/components/Blog.jsx';
 
 // Text Components Import
 import ShinyText from './assets/components/TxtComp/ShinyText.jsx';
@@ -21,13 +21,10 @@ and elements start with a lowercase
 */
 
 function App() {
-  const [activeTab, setActiveTab] = useState('home');
+  const [activeTab, setActiveTab] = useState('about');
 
   let TabContent;
   switch (activeTab){
-    case 'home':
-      TabContent = <Home />;
-      break;
     case 'about':
       TabContent = <About />;
       break;
@@ -37,8 +34,11 @@ function App() {
     case 'projects':
       TabContent = <Projects />;
       break;
+    case 'blog':
+      TabContent = <Blog />;
+      break;
     default:
-      TabContent = <Home />;
+      TabContent = <About />;
   }
 
   return (

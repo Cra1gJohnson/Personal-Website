@@ -135,24 +135,25 @@ button:focus-visible {
     width: 10%; /*60px*/
     background-color: #7FB7BE;
     transition: transform 0.3s ease-in-out;
-    left: 30.8%; /*180px*/
+    left: 5.9%; /*180px*/
     top: 80%; /*35px*/
 }
 
-.active-tab.home {
-    transform: translateX(-150px); /* adjust this based on button size */
-}
 
 .active-tab.about {
-    transform: translateX(-25px);
+    transform: translateX(0px);
 }
 
 .active-tab.experience {
-    transform: translateX(130px);
+    transform: translateX(155px);
 }
 
 .active-tab.projects {
-    transform: translateX(300px);
+    transform: translateX(320px);
+}
+
+.active-tab.blog {
+    transform: translateX(460px);
 }
 
 /* TabsBar styles end */
