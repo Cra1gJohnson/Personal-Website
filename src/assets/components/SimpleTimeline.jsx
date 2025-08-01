@@ -2,19 +2,39 @@ import React from 'react';
 
 import './SimpleTimeline.css';
 
+import ShinyText from './TxtComp/ShinyText.jsx';
+
 const SimpleTimeline = () => {
   const events = [
-    { date: "2024-05", title: "Graduated from UMBC", description: "Project initiation and requirements gathering. Setting up the foundation for the entire project workflow." },
-    { date: "2024-02", title: "Design", description: "UI/UX design phase including wireframes, mockups, and user experience optimization." },
-    { date: "2024-03", title: "Development", description: "Core development phase where we build the main features and functionality of the application." },
-    { date: "2024-04", title: "Testing", description: "Comprehensive QA testing including unit tests, integration tests, and user acceptance testing." },
-    { date: "2024-05", title: "Launch", description: "Final deployment and product launch with monitoring and post-launch support." }
+    { date: "2024 May",
+      title: "Graduated from UMBC",
+      description: "Graduated with a Bachelors degree in Computer Science. Cum Laude with a GPA of 3.553." 
+    },
+    { date: "2024 June-August",
+      title: "Software Engineer Intern at Northrop Grumman",
+      description: "Worked with the SEWIP Program. Worked specifically on DevSecOps. Working with tools like Jenkins. It was challenging since I had never worked with CI/CD tools before. Especially on such a large program. While a daunting task I updgraded the build scripts to work on RHEL8 machines. While also improving efficiency. Reducing build time from 2 hours to 40 minutes."
+    },
+    { date: "2023 June-August",
+      title: "Software Engineer Intern at Northrop Grumman",
+      description: "Developed C++ code for a Electronic Warfare System. Wrote scripts in Python, using Regex, to find applicable test data within certain value thresholds. Challenges I overcame during the internship were, learning Git, putting AGILE development process into practice, navigating a in person work environemnt, and having confidence in my solutions."
+    },
+    { date: "2022 June-August",
+      title: "YMCA Pool Manager",
+      description: "Being a Pool Manager taugh me lots of soft skills. Having responsibility, communication with leadership, teamwork, and leadership. While at the time I was upset about not getting a internship after my Freshman year, this job was very important to my professional development. Understanding how to professionally deal with patrons, complaints, and communicate."
+    }
   ];
 
   return (
     <>
       <div className="timeline-container">
-        <h2 className="timeline-title">Experience Timeline</h2>
+        <h2>
+          <ShinyText
+          text="Experience"
+          disabled={false}
+          speed={3}
+          className="timeline-title"
+          />
+        </h2>
         
         <div className="timeline-wrapper">
           <div className="timeline-line"></div>
