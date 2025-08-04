@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './SimpleTimeline.css';
+import '../../index.css';
 
 import ShinyText from './TxtComp/ShinyText.jsx';
 
