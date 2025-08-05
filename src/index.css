@@ -284,6 +284,29 @@ button:focus-visible {
     letter-spacing: 0.05em;
   }
   
+  .timeline-image {
+    width: 10%; /* Adjusted size */
+    height: auto;
+    margin-right: 1%;
+    margin-left: 60%;
+    top: 10%;
+    position: absolute;
+    flex-shrink: 0;
+    object-fit: contain; /* Ensures the image covers the circle */
+  }
+
+  /* UMBC Logo is really large. Needs its own className */
+  .timeline-image-umbc {
+    width: 20%;
+    height: auto;
+    margin-right: 2%;
+    margin-left: 64%;
+    top: 10%;
+    position: absolute;
+    flex-shrink: 0;
+  }
+
+
   .timeline-event-title {
     font-weight: 600;
     color: #E4E6EB;
