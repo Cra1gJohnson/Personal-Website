@@ -8,9 +8,9 @@ import UMBCLogo from '../imgs/UMBC_Logo.jpg';
 
 import ShinyText from './TxtComp/ShinyText.jsx';
 
-const SimpleTimeline = () => {
+const ExperienceTimeline = () => {
   const events = [
-    { date: "2024 May",
+    { date: "2025 May",
       title: "Graduated from UMBC",
       description: "Graduated with a Bachelors degree in Computer Science. Cum Laude with a GPA of 3.553.",
       img: UMBCLogo
@@ -34,48 +34,39 @@ const SimpleTimeline = () => {
 
   return (
     <>
-      <div className="timeline-container">
-        <h2>
-          <ShinyText
-            text="Experience"
-            disabled={false}
-            speed={3}
-            className="timeline-title"
-          />
-        </h2>
 
-        <div className="timeline-wrapper">
-          <div className="timeline-line"></div>
+      <div className="timeline-wrapper">
+        <div className="timeline-line"></div>
 
-          {events.map((event, index) => (
-            <div key={index} className="timeline-item">
-              <div className="timeline-circle">
-                <div className="timeline-circle-inner"></div>
-              </div>
-
-              <div className="timeline-content">
-                <div className="timeline-date">
-                  {event.date}
-                  {event.img && (
-                    <img
-                      src={event.img}
-                      className={
-                        event.img === UMBCLogo
-                          ? "timeline-image-umbc" /* UMBC Logo is really large */
-                          : "timeline-image"
-                      }
-                    />
-                  )}
-                </div>
-                <h3 className="timeline-event-title">{event.title}</h3>
-                <p className="timeline-description">{event.description}</p>
-              </div>
+        {events.map((event, index) => (
+          <div key={index} className="timeline-item">
+            <div className="timeline-circle">
+              <div className="timeline-circle-inner"></div>
             </div>
-          ))}
-        </div>
+
+            <div className="timeline-content">
+              <div className="timeline-date">
+                {event.date}
+                {event.img && (
+                  <img
+                    src={event.img}
+                    className={
+                      event.img === UMBCLogo
+                        ? "timeline-image-umbc" /* UMBC Logo is really large */
+                        : "timeline-image"
+                    }
+                  />
+                )}
+              </div>
+              <h3 className="timeline-event-title">{event.title}</h3>
+              <p className="timeline-description">{event.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
+      
     </>
   );
 };
 
-export default SimpleTimeline;
+export default ExperienceTimeline;

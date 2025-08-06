@@ -37,7 +37,6 @@ function SideBar() {
                     <span className="list-item">Christian--Walker</span>
                 </ul>
             </div>
-            <SocialBar/>
         </div>
     );
 };
