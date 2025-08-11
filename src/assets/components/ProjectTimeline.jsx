@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../index.css';
+import '../../App.css';
 
 import ShinyText from './TxtComp/ShinyText.jsx';
 

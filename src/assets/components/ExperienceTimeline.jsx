@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../index.css';
+import '../../App.css';
 
 import NGLogo from '../imgs/NG_Logo.jpg';
 import YMCALogo from '../imgs/YMCA_Logo.jpg';
