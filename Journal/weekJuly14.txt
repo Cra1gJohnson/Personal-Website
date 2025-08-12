@@ -22,3 +22,10 @@ July 31st
     - Created a basic timeline that is functional with dummy data and dates.
     - Added updated version of Moon rounded font. Can use the lowercase version for body text. However, all prexisting things should be kept using old font since I think titles and other things look good as is.
     - Added some real data to Experience tab.
+
+
+August 10th
+-> Christian
+    - Adding animated list from React Dev Bits.
+    - Requires (npm install motion)
+    
