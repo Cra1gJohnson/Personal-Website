@@ -28,4 +28,11 @@ August 10th
 -> Christian
     - Adding animated list from React Dev Bits.
     - Requires (npm install motion)
-    
+
+August 12th
+-> Christian
+    - Added 3 new files, Blog.jsx, BlogPost.jsx, BlogList.jsx.
+    - All of these files are used together to display the blog content.
+    - Need to note, that need to manually add whenever htere are new files.
+    - Added the styling to index.css
+    - Need to still change the styling to match the rest of the website.
