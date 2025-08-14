@@ -42,9 +42,11 @@ function App() {
   }
 
   return (
-    <main className="main-container">
-      <SideBar />
-      <div className="content-body">
+    <main className="app">
+      <div className="sidebar">
+        <SideBar />
+      </div>
+      <div className="content">
         <TabsBar activeTab={activeTab} setActiveTab={setActiveTab} />
         {TabContent}
       </div>

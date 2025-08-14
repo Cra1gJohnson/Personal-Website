@@ -1,50 +1,79 @@
-#root {
-  background-color: #1C1F26;
-  text-align: center;
-  min-height: 100vh;
+
+.app{
+  font-family: var(--sans);
+  color: var(--text);
+  background-color: var(--bg);
+  width: 100%;
+  height: 100%;
+  padding: var(large);
+  margin: 0;
+  
+
+  display: flex;
+  flex-direction: column;
+  
 }
 
-#containerOne {
+.sidebar{
+  font-family: var(--sans);
+  background-color: var(--bg);
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  position: relative;
+  top: var(--small);
+
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
 
-
-.main-container{
-  font-family:'moon-rounded';
-  color: #E4E6EB;
-  background-color: #1C1F26;
-  display: flex;
-  align-items:  normal;
-  justify-content: center;
-  border: 2px solid transparent;
-  width: 100%;
-  height: 100%;
-  min-width: 100vw; 
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
-}
-
-.content-body {
-  font-family:'moon-rounded';
-  color: #E4E6EB;
+.content{
+  font-family: var(--sans);
+  color: var(--text);  
+  border-radius: var(--radius);
+  border: 2px solid var(--border);
+  background-color: var(--bg);
   position: relative;
+  top: var(--large);
+
+
   display: flex;
-  align-items: right;
-  justify-content: center;
-  border-radius: 25px;
-  border: 2px solid #3E4552;
-  width: 45%;
-  min-width: 650px;
-  max-width: 1300px;
-  height: 70%;
-  background-color: #1C1F26;
-  top: 6vh;
-  padding-top: 50px;
 }
+
+@media (min-width: 900px) {
+  .app {
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--large);
+  }
+
+  /* Make the sidebar sticky so it stays visible while scrolling the main */
+  .sidebar {
+    top: var(--large);
+    width: 24%;
+    height: calc(100dvh - 2 * var(--large));
+    overflow: auto;
+  }
+  .content {
+    top: var(--large);
+    width: 66%;
+    height: calc(100dvh - 2 * var(--large));
+    overflow: auto;
+  }
+}
+
+
+
+/*
+the above css is going for the following
+the sidebar to appear above the content on mobile and 
+next to the content on desktop.
+the sidebars content to be formatted in a simple way on mobile
+and a verbose way on desktop. 
+the content div to scroll through overflow on desktop, but expand on mobile. 
+this should give a stable feel on desktop and a mobile. 
+*/
 
 /* TabsBar styles */
 

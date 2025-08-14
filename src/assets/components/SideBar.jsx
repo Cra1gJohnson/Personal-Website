@@ -8,7 +8,7 @@ import ShinyText from './TxtComp/ShinyText.jsx';
 function SideBar() {
 
     return (
-        <div className="sidebar-main">
+        <>
             <h2>
                 <ShinyText
                 text="Christian Walker"
@@ -37,7 +37,7 @@ function SideBar() {
                     <span className="list-item">Christian--Walker</span>
                 </ul>
             </div>
-        </div>
+        </>
     );
 };
 
