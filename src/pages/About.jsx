@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Header from '../assets/components/Header.jsx';
+
 import NavBar from '../assets/components/NavBar.jsx';
 import PicInfo from '../assets/components/PicInfo.jsx';
 import './About.css';

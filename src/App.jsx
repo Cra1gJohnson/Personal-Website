@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import Header from './assets/components/Header.jsx';
+
 import TabsBar from './assets/components/TabsBar.jsx';
-import SocialBar from './assets/components/SocialBar.jsx';
 import SideBar from './assets/components/SideBar.jsx';
 
 import About from './assets/components/About.jsx';
@@ -9,12 +8,8 @@ import Experience from './assets/components/Experience.jsx';
 import Projects from './assets/components/Projects.jsx';
 import Blog from './assets/components/Blog.jsx';
 
-// Text Components Import
-import ShinyText from './assets/components/TxtComp/ShinyText.jsx';
 
 import './App.css';
-import './index.css';
-
 /*
 react components start  with an uppercase
 and elements start with a lowercase

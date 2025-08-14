@@ -1,11 +1,13 @@
 import React from "react";
 
-import Media from "./Media";
 import SocialBar from './SocialBar.jsx';
 import ShinyText from './TxtComp/ShinyText.jsx';
+
+import './About.css'
 function About() {
+
     return (
-        <div id="Home">
+        <div id="home">
             <h1>
                 <ShinyText
                 text="Craig Johnson and Christian Walker"
@@ -17,7 +19,7 @@ function About() {
             </h1>
 
             <h3>Developer |  Programmer | Software Engineer | Athlete | Gamer | Musician</h3>
-            <div id="containerOne"><SocialBar /></div>
+            {/* <div id="containerOne"><SocialBar /></div> */}
         </div>
     );
 };

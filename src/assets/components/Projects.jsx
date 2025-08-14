@@ -1,5 +1,5 @@
 import React from "react";
-import Media from "./Media";
+
 import ProjectTimeline from './ProjectTimeline.jsx';
 import ShinyText from './TxtComp/ShinyText.jsx';
 function Projects() {
