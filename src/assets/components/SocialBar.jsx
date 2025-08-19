@@ -10,8 +10,7 @@ import './SocialBar.css';
 
 const SocialBar = () => {
   return (
-    <div id="social">
-
+    <div className="social">
         <a href="https://github.com" target="_blank">
             <img src={githubLogo} className="logo" />
         </a>

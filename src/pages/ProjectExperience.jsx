@@ -1,6 +1,3 @@
-
-import Header from '../assets/components/Header.jsx';
-import NavBar from '../assets/components/NavBar.jsx';
 import InfiniteScroll from '../assets/components/TxtComp/InfScroll.jsx';
 import FlowingMenu from "../assets/components/TxtComp/FlowingMenu.jsx";
 
@@ -23,8 +20,6 @@ const demoItems = [
 const ProjectExperience = () => {
   return (
     <div>
-      <Header />
-      <NavBar />
       {/* Add margin-top to position InfiniteScroll lower */}
       <div style={{ marginTop: '60px' }}>
         <InfiniteScroll
