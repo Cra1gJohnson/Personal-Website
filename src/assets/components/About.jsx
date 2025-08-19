@@ -1,11 +1,11 @@
 import React from "react";
-
 import SocialBar from './SocialBar.jsx';
 import ShinyText from './TxtComp/ShinyText.jsx';
+import './About.css';
+import { useMediaQuery } from 'react-responsive';
 
-import './About.css'
 function About() {
-
+    const isMobile = useMediaQuery({maxWidth: 900});
     return (
         <div id="home">
             <h1>
@@ -19,7 +19,7 @@ function About() {
             </h1>
 
             <h3>Developer |  Programmer | Software Engineer | Athlete | Gamer | Musician</h3>
-            {/* <div id="containerOne"><SocialBar /></div> */}
+            {isMobile? <></> : <SocialBar /> }
         </div>
     );
 };

@@ -17,7 +17,7 @@ and elements start with a lowercase
 
 function App() {
   const [activeTab, setActiveTab] = useState('about');
-
+  
   let TabContent;
   switch (activeTab){
     case 'about':

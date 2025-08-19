@@ -1,4 +1,14 @@
 
+/*
+the below css is going for the following
+the sidebar to appear above the content on mobile and 
+next to the content on desktop.
+the sidebars content to be formatted in a simple way on mobile
+and a verbose way on desktop. 
+the content div to scroll through overflow on desktop, but expand on mobile. 
+this should give a stable feel on desktop and a mobile. 
+*/
+
 .app{
   font-family: var(--sans);
   color: var(--text);
@@ -37,8 +47,9 @@
   position: relative;
   top: var(--large);
 
-
   display: flex;
+  flex-direction: column;
+
 }
 
 @media (min-width: 900px) {
@@ -59,103 +70,55 @@
     top: var(--large);
     width: 66%;
     height: calc(100dvh - 2 * var(--large));
-    overflow: auto;
+    
   }
 }
 
+.content h1,
+.content h2, 
+.content h3 {
+  text-align: center;
+}
 
-
-/*
-the above css is going for the following
-the sidebar to appear above the content on mobile and 
-next to the content on desktop.
-the sidebars content to be formatted in a simple way on mobile
-and a verbose way on desktop. 
-the content div to scroll through overflow on desktop, but expand on mobile. 
-this should give a stable feel on desktop and a mobile. 
-*/
+/* Mobile transition end */
 
 /* TabsBar styles */
-
-.tabs-bar {
-  font-family: 'moon-rounded';
-  position: absolute;
-  background-color: #2A2E37;
+.tabsbar {
+  font-family: var(--sans);
+  background-color: var(--bg);
+  
+  border-radius: var(--radius) var(--radius) 0 0;
+  min-height: var(--xlarge);
+  
+  padding: var(--small);
+  
   display: flex;
-  border-radius: 0px 0px 25px 25px;
-  border: 2px solid #3E4552;
-  min-height: 43px;
-  max-height: 43px;
-  width: auto;
-  height: 4.5vh;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  margin-top: -2px;
   flex-direction: row;
+  justify-content: center;
+  gap: var(--large);
 }
 
-.tabs-link {
-    font-size: clamp(0.5rem, 10vw, 1.25rem); /* 20px */
-    font-family: 'moon-rounded';
-    background-color: #2A2E37;
-    color: #E4E6EB;
-    margin-right: 30px;
-    margin-left: 30px;
-    transition: color 0.5s ease;
-    padding: 0px;
+/* tab refers to all of the tab buttons */
+/* below is responsible for active tab changes*/
+.tab {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: var(--sans);
+
+  background-color: var(--bg);
+
+  border: 2px solid var(--bg);
+  transition: border-bottom 0.3s ease;
+  transition: color 0.3s ease
 }
-
-.tabs-link:hover {
-    color:#7FB7BE;
-    border-top: 1px solid #2A2E37;
-    border-right: 1px solid #2A2E37;
-    border-left: 1px solid #2A2E37;
-    border-bottom: 1px solid #2A2E37;
+.tab:hover{
+  color: var(--accent);
 }
-
-.active-tab {
-    position: absolute;
-    bottom: 0;
-    height: 5%; /*2px*/
-    width: 10%; /*60px*/
-    background-color: #7FB7BE;
-    transition: transform 0.3s ease-in-out;
-    left: 5.9%; /*180px*/
-    top: 80%; /*35px*/
+.tab.active{
+  border-bottom: 5px solid var(--accent);
 }
-
-
-.active-tab.about {
-    transform: translateX(0px);
-}
-
-.active-tab.experience {
-    transform: translateX(155px);
-}
-
-.active-tab.projects {
-    transform: translateX(320px);
-}
-
-.active-tab.blog {
-    transform: translateX(460px);
-}
-
-/* TabsBar styles end */
-
-/* TabContent Styles */
-.tab-content {
-  padding: '2rem';
-  width: 200px;
-  border: 2px solid red;
-}
-
-
-
-
-
-
+/* Tabsbar styles end */
 
 
 /*SimpleTimeline styles */
@@ -289,53 +252,3 @@ this should give a stable feel on desktop and a mobile.
     margin: 0;
   }
 /* SimpleTimeline styles end */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-*/
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
