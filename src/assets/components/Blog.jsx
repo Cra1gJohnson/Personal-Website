@@ -1,12 +1,10 @@
 import React from 'react';
-
-import '../../index.css';
-
+import '../../App.css';
 function Blog() {
     return (
-        <>
-            <h1>Blog</h1>
-        </>
+        <div className="info" >
+            <h2>Blog</h2>
+        </div>
     )
 }
 

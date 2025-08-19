@@ -1,28 +1,24 @@
-#social{
-    height: 8rem;
-    width: 50%;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;;
-    align-items: center;
-    background-color: #1C1F26;
-    padding: 1.5rem;
-
+.social{
+  display: flex;
+  justify-content: center;;
+  align-items: center;
+  background-color: var(--bg);
+  padding: 1.5rem;
+  gap: var(--xlarge);
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    transition: transform 0.5s ease;
-    margin-left: 3%;
-    margin-right: 3%;
-    transform: scale(0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  transition: transform 0.5s ease;
 }
 
-.logo:hover {
-  transform: scale(0.9);
-  z-index: 1;
+@media (min-width: 900px) {
+  .logo:hover {
+    transform: scale(1.2);
+    z-index: 1;
+  }
 }

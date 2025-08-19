@@ -1,18 +1,11 @@
 import React from "react";
-
 import ProjectTimeline from './ProjectTimeline.jsx';
 import ShinyText from './TxtComp/ShinyText.jsx';
+import '../../App.css';
 function Projects() {
     return (
-        <div className="timeline-container">
-            <h2>
-                <ShinyText
-                    text="Projects"
-                    disabled={false}
-                    speed={3}
-                    className="timeline-title"
-                />
-            </h2>
+        <div className="info">
+
             <ProjectTimeline />
         </div>
     );

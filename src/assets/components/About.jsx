@@ -1,13 +1,12 @@
 import React from "react";
 import SocialBar from './SocialBar.jsx';
 import ShinyText from './TxtComp/ShinyText.jsx';
-import './About.css';
 import { useMediaQuery } from 'react-responsive';
-
+import '../../App.css';
 function About() {
     const isMobile = useMediaQuery({maxWidth: 900});
     return (
-        <div id="home">
+        <div className="info">
             <h1>
                 <ShinyText
                 text="Craig Johnson and Christian Walker"
