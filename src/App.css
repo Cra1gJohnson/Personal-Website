@@ -141,24 +141,16 @@ this should give a stable feel on desktop and a mobile.
 /*SimpleTimeline styles */
 
 .timeline-title {
-  font-size: 2rem;
+  font-size: var(--xlarge);
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .timeline-wrapper {
-  position: relative;
-  padding-left: 2rem;
+  padding: 2rem;
+  border-color: 5px solid var(--muted);
 }
 
-.timeline-line {
-  position: absolute;
-  left: 1%;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background-color: #3e4552;
-}
 
 .timeline-item {
   position: relative;
@@ -221,27 +213,6 @@ this should give a stable feel on desktop and a mobile.
   letter-spacing: 0.05em;
 }
 
-.timeline-image {
-  width: 10%; /* Adjusted size */
-  height: auto;
-  margin-right: 1%;
-  margin-left: 60%;
-  top: 10%;
-  position: absolute;
-  flex-shrink: 0;
-  object-fit: contain; /* Ensures the image covers the circle */
-}
-
-/* UMBC Logo is really large. Needs its own className */
-.timeline-image-umbc {
-  width: 20%;
-  height: auto;
-  margin-right: 2%;
-  margin-left: 64%;
-  top: 10%;
-  position: absolute;
-  flex-shrink: 0;
-}
 
 
 .timeline-event-title {
@@ -261,4 +232,16 @@ this should give a stable feel on desktop and a mobile.
   line-height: 1.5;
   margin: 0;
 }
+ 
+.timeline-logo-square {
+  height: 100px;
+  width: 100px;
+}
+
+
+.timeline-logo-rectangle {
+  height: 100px;
+  width: 150px;
+}
+
 /* SimpleTimeline styles end */

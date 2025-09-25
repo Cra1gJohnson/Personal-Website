@@ -64,7 +64,9 @@ const ExperienceTimeline = () => {
                   <img
                     src={event.img}
                     className={
-                      event.img
+                      event.img === RacePace || HCDrug ?
+                      "timeline-logo-rectangle" : "timeline-logo-square"
+
                     }
                   />
                 )}
