@@ -2,34 +2,47 @@ import React from 'react';
 
 import '../../App.css';
 
-import NGLogo from '../imgs/NG_Logo.jpg';
-import YMCALogo from '../imgs/YMCA_Logo.jpg';
-import UMBCLogo from '../imgs/UMBC_Logo.jpg';
-
+import HCDrug from '/HCDrugFreeLOGO.png';
+import FranklinsLogo from '/franklins-brewery.jpg';
+import UMDLogo from '/university-of-maryland.svg';
+import Madrid from '/Madrid.png';
+import USIBA  from '/USIBA.jpeg';
+import RacePace from '/Race_Pace bicycles.png'
 import ShinyText from './TxtComp/ShinyText.jsx';
 
 const ExperienceTimeline = () => {
   const events = [
-    { date: "2025 May",
-      title: "Graduated from UMBC",
-      description: "Graduated with a Bachelors degree in Computer Science. Cum Laude with a GPA of 3.553.",
-      img: UMBCLogo
+    { date: "2025 August",
+      title: "Graduated from UMD",
+      description: "I Graduated with a Bachelors degree in Computer Science",
+      img:UMDLogo
     },
-    { date: "2024 June-August",
-      title: "Software Engineer Intern at Northrop Grumman",
-      description: "Worked with the SEWIP Program. Worked specifically on DevSecOps. Working with tools like Jenkins. It was challenging since I had never worked with CI/CD tools before. Especially on such a large program. While a daunting task I updgraded the build scripts to work on RHEL8 machines. While also improving efficiency. Reducing build time from 2 hours to 40 minutes.",
-      img: NGLogo
+    { date: "2025 March",
+      title: "USIBA Boxing Nationals Competition",
+      description: "I Competed in the Beginner 160lbs division of the 2025 USIBA Nationals Tournament in Macon, Georgia. Weighed in on multiple days and won my division. Collaborated with and supported the rest of my team, UMD Club Boxing",
+      img: USIBA
     },
-    { date: "2023 June-August",
-      title: "Software Engineer Intern at Northrop Grumman",
-      description: "Developed C++ code for a Electronic Warfare System. Wrote scripts in Python, using Regex, to find applicable test data within certain value thresholds. Challenges I overcame during the internship were, learning Git, putting AGILE development process into practice, navigating a in person work environemnt, and having confidence in my solutions.",
-      img: NGLogo
+
+    { date: "2024 January",
+      title: "Studied Abroad in Madrid",
+      description: "I Lived and studied in Spain for 6 months. I thoroughly enjoyed the process of learning a new culture, meeting new friends, and getting to see many of new places. One of the most intereting parts was experiencing a foreign university. I also gained my B1 certificate in Spanish",
+      img: Madrid
     },
-    { date: "2022 June-August",
-      title: "YMCA Pool Manager",
-      description: "Being a Pool Manager taugh me lots of soft skills. Having responsibility, communication with leadership, teamwork, and leadership. While at the time I was upset about not getting a internship after my Freshman year, this job was very important to my professional development. Understanding how to professionally deal with patrons, complaints, and communicate.",
-      img: YMCALogo
-    }
+    { date: "2023 September",
+      title: "Server at Franklins Brewery",
+      description: "I became a Server at Franklins during my semster at college. It taught me valuable lessons in multitasking, communication, and how to handle a stressful job",
+      img: FranklinsLogo
+    },
+    { date: "2020 March",
+      title: "Teaching Consultant for HCDrugFree",
+      description: "Was given the oportunity to help teach a course on life skills to local middle schoolers. This was both in person and online.",
+      img: HCDrug
+    },
+    { date: "2019 March",
+      title: "Mechanic at Race Pace Bicycles",
+      description: "I got this job while in high school and learned how to work on all different types of bicycles. ",
+      img: RacePace
+    },
   ];
 
   return (
@@ -51,9 +64,7 @@ const ExperienceTimeline = () => {
                   <img
                     src={event.img}
                     className={
-                      event.img === UMBCLogo
-                        ? "timeline-image-umbc" /* UMBC Logo is really large */
-                        : "timeline-image"
+                      event.img
                     }
                   />
                 )}

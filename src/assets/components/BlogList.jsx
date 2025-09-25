@@ -13,7 +13,7 @@ const BlogList = ({ posts, onPostSelect }) => {
         <div className='blog-list'>
             <header className='blog-header'>
                 <h1>Blog Posts</h1>
-                <p>Thoughts on web development and technology</p>
+                <p>Thoughts on Development and Technology</p>
             </header>
 
             <div className='posts-grid'>

@@ -3,20 +3,25 @@
 function ContactList() {
 
     return (
-        <div className="social-links">
-            <ul>
-                <div className="list-image"></div>
-                <li className="list-header">Instagram</li>
-                <span className="list-item">c.wa1ker</span>
-                <div className="list-image"></div>
-                <li className="list-header">Email</li>
-                <span className="list-item">cwalker6@umbc.edu</span>
-                <div className="list-image"></div>
-                <li className="list-header">GitHub</li>
-                <span className="list-item">cwalke6</span>
-                <div className="list-image"></div>
-                <li className="list-header">LinkedIn</li>
-                <span className="list-item">Christian--Walker</span>
+        <div>
+            <ul className="contacts">
+                <li>
+                    <span className="title">Instagram:</span><br />
+                    <span>cra1gjohnson</span>
+                </li>
+                
+                <li>
+                    <span className="title">Email:</span><br />
+                    <span>cjohns65@terpmail.umd.edu</span>
+                </li>
+                <li>
+                    <span className="title">GitHub:</span><br />
+                    <span>Cra1gJohnson</span>
+                </li>
+                <li>
+                    <span className="title">LinkedIn:</span><br />
+                    <span>craig-p-johnson</span>
+                </li>
             </ul>
         </div>
     );

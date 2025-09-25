@@ -98,7 +98,7 @@ this should give a stable feel on desktop and a mobile.
 }
 /* Tabsbar styles end */
 
-@media (min-width: 900px) {
+@media (min-width: 975px) {
   .app {
     flex-direction: row;
     justify-content: center;

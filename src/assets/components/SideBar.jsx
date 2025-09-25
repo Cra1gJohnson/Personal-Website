@@ -3,22 +3,15 @@ import SocialBar from './SocialBar.jsx';
 import ShinyText from './TxtComp/ShinyText.jsx';
 import ContactList from './ContactList.jsx';
 import { useMediaQuery } from 'react-responsive';
+import Avatar from '/AlbatrossAvatar.png'
 
 function SideBar() {
-    const isMobile = useMediaQuery({maxWidth: 900});
+    const isMobile = useMediaQuery({maxWidth: 974});
     return (
         <>
-            <h2>
-                <ShinyText
-                text="Christian Walker"
-                disabled={false}
-                speed={3}
-                className=""
-                style={{ fontSize: 'inherit', fontWeight: 'inherit'}}
-                />
-            </h2>
+            <h2>Craig Johnson</h2>
             <div className="avatar">
-                <span>AVATAR GOES HERE</span>
+                <img src={Avatar} className='Albatross'></img>
             </div>
 
             {isMobile ? <SocialBar/> : <ContactList/>}

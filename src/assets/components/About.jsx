@@ -7,15 +7,7 @@ function About() {
     const isMobile = useMediaQuery({maxWidth: 900});
     return (
         <div className="info">
-            <h1>
-                <ShinyText
-                text="Craig Johnson and Christian Walker"
-                disabled={false}
-                speed={3}
-                className=""
-                style={{ fontSize: 'inherit', fontWeight: 'inherit'}}
-                />
-            </h1>
+            <h1>Craig Johnson</h1>
 
             <h3>Developer |  Programmer | Software Engineer | Athlete | Gamer | Musician</h3>
             {isMobile? <></> : <SocialBar /> }

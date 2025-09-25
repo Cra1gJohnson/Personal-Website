@@ -10,15 +10,25 @@
     border: 2px solid #3e4552;
 }
 
-
-.list-header{
-    padding-top: 10px;
+.Albatross {
+    scale: 65%;
 }
 
-.list-item{
-    font-size: 11px;
+.contacts {
+    font-family: var(--sans);
+    font-weight: 400;
+    font-size: var(--med);
+    margin-right: 1.2rem;
 }
+.contacts li {
+    font-weight: 300;
+    
+}
+.contacts li::marker{
+    content: ">  ";
+    color: var(--accent);
+}
+.title{
+    color: var(--muted);
 
-.list-image{
-    border: 5px solid #3e4552;
 }
