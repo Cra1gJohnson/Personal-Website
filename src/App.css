@@ -73,7 +73,7 @@ this should give a stable feel on desktop and a mobile.
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: var(--large);
+  gap: var(--med);
 }
 
 /* tab refers to all of the tab buttons */
@@ -242,7 +242,9 @@ this should give a stable feel on desktop and a mobile.
   .info{
     overflow: auto;
   }
-
+  .tabsbar {
+    gap: var(--large);
+  }
   .tab{
     font-size: 1.5rem;
   }
