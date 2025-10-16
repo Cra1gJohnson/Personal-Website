@@ -11,13 +11,13 @@ import './SocialBar.css';
 const SocialBar = () => {
   return (
     <div className="social">
-        <a href="https://github.com" target="_blank">
+        <a href="https://github.com/Cra1gJohnson" target="_blank">
             <img src={githubLogo} className="logo" />
         </a>
-        <a href="https://www.instagram.com" target="_blank">
+        <a href="https://www.instagram.com/cra1gjohnson/?hl=en" target="_blank">
             <img src={instagramLogo} className="logo" />
         </a>
-        <a href="https://www.linkedin.com" target="_blank">
+        <a href="https://www.linkedin.com/in/craig-p-johnson/" target="_blank">
             <img src={linkedinLogo} className="logo" />
         </a>
         <a href="mailto:craig.johnson.21045@gmail.com" target="_blank">

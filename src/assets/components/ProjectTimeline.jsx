@@ -1,29 +1,28 @@
 import React from 'react';
 
 import '../../App.css';
-
 import ShinyText from './TxtComp/ShinyText.jsx';
 
 const ProjectTimeline = () => {
   const events = [
-    { date: "2025 August",
+    { date: "August 2025",
       title: "Portfolio and Blog Website",
-      description: "Website built with partner using Github and React.js. Hosted on a Raspberry pi webserver",
+      description: "A portfolio website and blog built using React and Vite, deployed using Node.js, nginx, cloudflare, and a DDNS Bash script.\n- Developed a personal website and blog using React and Vite, collaborating with a partner via Git and Github for version control and workflow management \n- Implemented mobile-first design using react-responsive and CSS to optimize the size for smartphones\n- Hosted the website on a raspberry pi server, which executes a DDNS Bash script every 5 minutes to connect cpjserve.com via certbot",
       
     },
-    { date: "2025 May",
+    { date: "July 2025",
+      title: "ML Technique Implementation",
+      description: "A PCA and NN techniques implemented in python in the anaconda command line environment \n- Collaborated with a partner to implement core machine learning techniques, including Principal Component Analysis (PCA) in Python using NumPy, SciPy, and Matplotlib \n- Developed and trained a neural network, using ReLU activation and squared loss for performance comparison and evaluating SGD and Adam optimizers over multiple epochs to achieve 98% accuracy",
+      
+    },
+    { date: "May 2025",
       title: "Recipe Website",
-      description: "Multi-Page website built with 3 person team using Github, Express.js, and JavaScript. Utilizing MonogDb as a backend database and Recipe API",
+      description: "A multi-Page website developed with 2 peers using Github, Express.js, and JavaScript. We Utilizing MonogDB as a backend database and Rest API to retrieve recipes.\n- Developed a full-stack recipe website using Express.js, MongoDB, and JavaScript, implementing RESTful API routes to manage and retrieve recipe data dynamically\n- Collaborated with a team of three using GitHub for version control, handling feature branches, code reviews, and merge workflows to maintain clean, consistent project structure",
       
     },
-    { date: "2025 March",
-      title: "Pacman Git Project",
-      description: "Completed the implementation of a Pacman game in python with a 4 person team. Used Git to remove public keys from file history. Worked with Bash scripts to moniter computer performace while the game is running",
-      
-    },
-    { date: "2024 December",
+    { date: "December 2024",
       title: "K-d Tree data structure",
-      description: "Implemented a K-d Data structure with various features like insert, search, and n-nearest neighbors",
+      description: "A K-d data structure built in python and tested with pytests. \n- implemented a K-d tree data structure with methods for insertion, deletion, and nearest neighbor search, ensuring the tree always remain balanced \n- Validated correctness and performance through 40+ automated tests, including stress tests with up to 10,000 randomized inputs ",
       
     }
   ];
@@ -45,7 +44,7 @@ const ProjectTimeline = () => {
                 {event.date}
               </div>
               <h3 className="timeline-event-title">{event.title}</h3>
-              <p className="timeline-description">{event.description}</p>
+              <div className="timeline-description" style={{whiteSpace: "pre-line"}}>{event.description}</div>
             </div>
           </div>
         ))}
