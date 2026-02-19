@@ -13,7 +13,9 @@ const Blog = () => {
       try {
         // You'll need to maintain a list of your post files
         const postSlugs = [
-          'website-creation'
+          'website-creation',
+          'react-frontend-flask-matrix-computation',
+          'openclaw-vps-custom-ai-assistant-skills'
         ];
 
         const postsData = await Promise.all(

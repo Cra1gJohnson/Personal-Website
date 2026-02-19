@@ -35,7 +35,6 @@ function App() {
     default:
       TabContent = <About />;
   }
-
   return (
     <main className="app">
       <div className="sidebar">

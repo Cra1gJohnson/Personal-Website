@@ -6,14 +6,25 @@ description: "Welcome to my Blog! This is a place where I will be publishing my 
 ---
 
 
-## React and Front-end
-Welcome! In this first post, I will be writing about React and other front-end tools that I have found useful or hazardous. 
+## React
 
-First, I will talk about React. This website is my second project built with React, but my first time acting as the "polishing" developer, my introduction was during a hackathon. I have to comment on the ease of using it in conjunction with vite. Setup is as simple as a snap. I've developed site in using HTML, CSS, JS, Node.js, and Express.js before, but unlike these other libraries and frameworks I really felt pushed to develop detailed components using react. The re-usability really shines. 
+This site is my second project built with React, but it’s my first time serving as the polishing developer. My initial exposure to React was during a hackathon, so coming back to it with more time and intention was a completely different experience.
 
-To get this specific site up I used NGINX, which was a breeze. A tweak of the config and everything ran smoothly, of course later on Certbot took over and worked its magic. I'll report back when I am running multiple sites and subdomains as I imagine my .conf file will grow. I purchased my domain from Cloudflare, I considered using a subdomain from duckduckgo, but ended up shelling out the bucks. I have always found that an initial investment encourages hard work. Cloudflare’s UI wasn't the most intuitive, but it was also my first time using it. The most challenging aspect was writing and scheduling a bash script to run DDNS from my Pi. Some of this was my lack of confidence with bash, some my ignorance with cron. It took a little work but ended up being quite elegant.
+One thing I’ll call out immediately: React + Vite is an incredibly smooth pairing. Setup is almost effortless. I’ve built sites using HTML, CSS, JavaScript, Node.js, and Express.js before, but React pushed me to think in components and design the UI in a more structured way. The reusability is where it really shines.
 
-Lastly is VScode, which I used in conjunction with git to develop the site. I feel that it the superior editor for web development, of course. "npm run dev" was a god send, especially for the ascetics 
+## Deployment (NGINX, Certbot, DNS)
 
-Huge thanks and credit to Christian Walker who collaborated and helped to build the site.
-: linkedin.com/in/christian--walker
+To get this site online, I used NGINX, which was refreshingly straightforward. After a quick config tweak, everything ran smoothly. I used Certbot to handle HTTPS elegantly. I’ll report back once I’m running multiple sites and subdomains, because I’m sure my .conf files will start to get pretty ambitious.
+
+I bought my domain through Cloudflare. I considered going with a free subdomain route, but ultimately decided to spend the money. I’ve noticed that making a small upfront investment tends to raise my own expectations, and keep me motivated.
+
+Cloudflare’s UI wasn’t the most intuitive at first (to be fair, it was my first time using it). The trickiest part of the whole process was writing and scheduling a bash script to run DDNS from my Raspberry Pi. Some of that was my own confidence using bash across machines, and some of it was just learning cron the hard way. The final solution ended up being pretty clean.
+
+## Tooling
+
+Finally, I used VS Code alongside Git and Github for development. For web work, it’s still my favorite editor. And honestly, "npm run dev" was a lifesaver for quickly iterating on layout and styling.
+
+## Credit
+
+Huge thanks to Christian Walker for collaborating and helping build the site.
+LinkedIn: christian--walker (linkedin.com/in/christian--walker)
