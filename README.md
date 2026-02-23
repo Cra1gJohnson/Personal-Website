@@ -1,4 +1,4 @@
-# cpjerve.com
+# cpjserve.com
 This website is built in JavaScript using the node.js enviornment and the React library. 
 Vite was also used for tooling and continuous development as well as rapid builds using {rollup}.
 CSS was used for styling the page to adapt to different screen dimensions. 
