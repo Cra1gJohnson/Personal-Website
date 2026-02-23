@@ -1,12 +1,15 @@
-# React + Vite
+# cpjserve.com
+This website is built in JavaScript using the node.js enviornment and the React library. 
+Vite was also used for tooling and continuous development as well as rapid builds using {rollup}.
+CSS was used for styling the page to adapt to different screen dimensions. 
+Nginx is being used as the web server.
+cloudflare is used for domain management and DNS. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[cpjserve.com](https://cpjserve.com)
 
-Currently, two official plugins are available:
+bash scripting that was used for continuous deployment and DDNS will be up soon. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Contributers 
+the two contributors were:  
+- Craig Johnson: Cra1gJohnson
+- Christian David: cwalke6
